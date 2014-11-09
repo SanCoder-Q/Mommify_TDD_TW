@@ -1,27 +1,20 @@
-### Get started with TDD in Jasmine
+# A sample for TDD learning
 
-First you need to clone this repo to you local machine
+通过一个字符串替换的小例子，学习TDD的基本过程
 
-```sh
-$ git clone git@github.com:abruzzi/tdd-boilerplate.git
-```
+## 需求
 
-And then go to the folder `git` created for you:
+对于一个给定的```字符串```，如果其中```元音```字母数目超过整个字符串字符数目的30%，则将该```元音```字母替换为字符串```mommy```;另外，如果有```连续的元音```字母出现，则仅替换一次。
 
-```sh
-$ cd tdd-boilerplate
-```
+## [实例化需求(Specification by Example)](specificationbyexample.com)
 
-Add your `specification` to `spec` folder and source code to `src` folder. Finally, don't forget to update the references in `SpecRunner.html`.
+- ```hmm``` -> ```hmm```
+- ```she``` -> ```shmommy```
+- ```HeAr``` -> ```Hmommyr```
+- ```Ship``` -> ```Ship```
 
-There are 2 placeholders in the file:
+## 参考
 
-```html
-  <!-- include source files here... -->
+由TW Qiu大师写的Blog：[《从一个小例子学习TDD》](icodeit.org/2014/11/tdd-step-by-step).
 
-  <!-- include spec files here... -->
-```
 
-One thing should keep in your mind is `source` code should be placed `BEFORE` the `specification` testing against it.
-
-Have fun!
